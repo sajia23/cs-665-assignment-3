@@ -1,9 +1,9 @@
 /**
  * Name: Shaohua Yue
  * Course: CS-665 Software Designs & Patterns
- * Date: 10/08/2024
+ * Date: 10/27/2024
  * File Name: PublisherBase.java
- * Description: This interface defines methods for publisher role
+ * Description: This class defines method for publisher
  */
 package edu.bu.met.cs665;
 

@@ -1,3 +1,10 @@
+/**
+ * Name: Shaohua Yue
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/27/2024
+ * File Name: Email.java
+ * Description: This class defines structure of email.
+ */
 package edu.bu.met.cs665;
 
 public class Email {
@@ -9,6 +16,9 @@ public class Email {
     String subjectLine;
     String closing;
 
+    /**
+     * Construction method
+     */
     public Email(String to, String from, String subjectLine, String salutation, String body, String closing, String signature) {
         this.to = to;
         this.from = from;
@@ -19,6 +29,9 @@ public class Email {
         this.signature = signature;
     }
 
+    /**
+     * Construction method
+     */
     public Email() {
 
     }

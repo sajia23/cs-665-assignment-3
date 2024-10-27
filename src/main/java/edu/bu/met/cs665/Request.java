@@ -1,7 +1,11 @@
+/**
+ * Name: Shaohua Yue
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/27/2024
+ * File Name: Request.java
+ * Description: This class defines request sent to email service.
+ */
 package edu.bu.met.cs665;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Request {
     String customerName;
@@ -9,6 +13,9 @@ public class Request {
     String customerEmail;
     CustomerSegment customerSegment;
 
+    /**
+     * Construction method
+     */
     public Request(String customerName, String customerEmail, CustomerSegment customerSegment) {
         this.customerName = customerName;
         this.customerSegment = customerSegment;

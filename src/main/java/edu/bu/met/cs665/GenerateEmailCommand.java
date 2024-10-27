@@ -1,13 +1,27 @@
+/**
+ * Name: Shaohua Yue
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 10/27/2024
+ * File Name: GenerateEmailCommand.java
+ * Description: This class defines command of generating email.
+ */
 package edu.bu.met.cs665;
 
 public class GenerateEmailCommand implements Command {
     EmailTemplate emailTemplate;
     Request request;
 
+    /**
+     * Construction method
+     */
     public GenerateEmailCommand() {
 
     }
 
+    /**
+     * execute the command
+     * @return
+     */
     @Override
     public Email execute() {
         Email email = new Email();
