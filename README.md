@@ -1,16 +1,17 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Shaohua Yue                |
+| Date         | 10/27/2024                 |
+| Course       | Fall                       |
+| Assignment # | 3                          |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+In the assignment, I implement a email service that sends email to all kinds of customer with different email template.
+Command pattern, Template method pattern, Facade pattern, Observer pattern, Singleton pattern and Factory method pattern are used in implementation.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/sajia23/cs-665-assignment-3
 
 # Implementation Description 
 
@@ -19,11 +20,20 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+- Answer: I use the template method pattern for generating emails. When new type of customer is added, system can simply add a new template class to define the specific action for the customer.\
+Also, command pattern is used to insure flexibility. When new command is added, system can simply increase a new command class to define new action.
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+- Answer: I use command pattern when generating emails. I put multi actions into one command. So it is easy to understand and also simple.
+Also I use facade pattern, simply the invocation of function and it is easy to understand.
 - Describe how you have avoided duplicated code and why it is important.
+- Answer: I use template method pattern when generating emails for different kinds of customers. They also have common part which is defined in abstract template. In this way,
+I avoid duplicated code and it's easy to define specific codes for different customer.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+- Answer: Command pattern, Template method pattern, Facade pattern, Observer pattern, Singleton pattern and Factory method pattern are used in implementation.\
+Template method pattern: Because every kind of customer has specific part in email, otherwise they also have common part. In this case, it is appropriate to use template method pattern.\
+Command pattern: We can add or delete command according to requirements simply. All commands are seperated from each other.
 
 
 # Maven Commands
